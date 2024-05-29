@@ -1,0 +1,66 @@
+/* MenuTop.css */
+.menuTop {
+  position: fixed;
+  top: 80px; /* Start below the header */
+  left: 0;
+  /* height: calc(100% - 60px); Full height minus header height */
+  width: 250px; /* Set a fixed width */
+  /* background-color: #f5f5f5; Sidebar background color */
+  display: flex;
+  flex-direction: column; /* Vertical layout */
+  align-items: flex-start; /* Align items to the start */
+  padding-top: 20px; /* Top padding for some space */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  /* overflow-y: auto; Enable vertical scrolling */
+  z-index: 999; /* Ensure it's below the header */
+  height: 100%;
+}
+
+.menuActive,
+.menuActive1 {
+  width: 92%; /* Full width */
+  display: flex;
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Padding for space */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.menuActive:hover,
+.menuActive1:hover {
+  background-color: #e0e0e0; /* Change background color on hover */
+}
+
+.menuActiveChild,
+.menuActiveItem {
+  width: 6px;
+  height: 100%;
+  background-color: #3949ab; /* Active item indicator color */
+}
+
+.dashboardIcon,
+.rejectionIcon {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px; /* Space between icon and text */
+}
+
+span {
+  font-size: 16px; /* Text size */
+  color: #333; /* Text color */
+}
+
+.menuActive1 .menuActiveItem {
+  background-color: transparent; /* Make the indicator transparent for inactive items */
+}
+
+.group {
+  display: flex;
+  align-items: center;
+}
+
+.vectorIcon,
+.clipPathGroup {
+  width: 100%;
+  height: auto;
+}
