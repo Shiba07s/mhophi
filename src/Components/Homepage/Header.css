@@ -25,6 +25,7 @@
 .rectangleParent {
   display: flex;
   align-items: center;
+  margin: 0 auto;
 }
 
 .groupChild {
@@ -55,7 +56,8 @@
 
 @media (max-width: 767px) {
   .rectangleParent {
-    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
   }
 
   .headerItem,
