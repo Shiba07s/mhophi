@@ -1,7 +1,7 @@
 /* MenuTop.css */
 .menuTop {
   position: fixed;
-  top: 80px; /* Start below the header */
+  top: 100px; /* Start below the header */
   left: 0;
   /* height: calc(100% - 60px); Full height minus header height */
   width: 250px; /* Set a fixed width */
